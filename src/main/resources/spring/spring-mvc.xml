@@ -15,8 +15,8 @@
                 <entry key="htm" value="text/html"/>
             </map>
         </property>
-        <property name="defaultContentType" value="text/html"></property>
-        <property name="favorParameter" value="true"></property>
+        <property name="defaultContentType" value="text/html"/>
+        <property name="favorParameter" value="true"/>
     </bean>
     <bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
         <property name="basename">
@@ -40,11 +40,11 @@
         <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
         <property name="prefix" value="/jsp/"/>
         <property name="suffix" value=".jsp"/>
-        <property name="order" value="2"></property>
+        <property name="order" value="2"/>
     </bean>
     <bean id="tiles_viewResolver" class="org.springframework.web.servlet.view.UrlBasedViewResolver">
         <property name="viewClass" value="org.springframework.web.servlet.view.tiles3.TilesView"/>
-        <property name="order" value="1"></property>
+        <property name="order" value="1"/>
     </bean>
     <bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
         <property name="definitions">
